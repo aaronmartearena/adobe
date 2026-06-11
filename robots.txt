@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Bloquear archivos que no necesitan indexarse
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://adobeingenieria.com.ar/sitemap.xml
