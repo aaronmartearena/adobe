@@ -712,13 +712,14 @@ footer.ft { background: #0F0E0A; color: var(--on-dark-soft); padding: 64px 0 32p
 .wa-float {
   position: fixed; right: 22px; bottom: 22px; z-index: 90;
   width: 58px; height: 58px; border-radius: 50%;
-  background: #25D366; display: grid; place-items: center;
-  box-shadow: 0 14px 34px -8px rgba(37,211,102,.6);
-  transition: transform .35s var(--ease), opacity .4s var(--ease), visibility .4s var(--ease);
+  background: transparent;
+  display: grid; place-items: center;
+  filter: drop-shadow(0 4px 12px rgba(37,211,102,.55));
+  transition: transform .35s var(--ease), opacity .4s var(--ease), visibility .4s var(--ease), filter .35s var(--ease);
   opacity: 1; visibility: visible;
 }
-.wa-float:hover { transform: scale(1.08); }
-.wa-float svg   { width: 30px; height: 30px; fill: #fff; }
+.wa-float:hover { transform: scale(1.1); filter: drop-shadow(0 6px 18px rgba(37,211,102,.75)); }
+.wa-float svg   { width: 52px; height: 52px; }
 .wa-float.wa-hidden { opacity: 0; visibility: hidden; transform: scale(0.8); pointer-events: none; }
 
 /* ── REVEAL ANIMATION ── */
