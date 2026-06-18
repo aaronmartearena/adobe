@@ -302,7 +302,7 @@
 
   /* disparo real: window load (DOM + recursos)
      + retardo mínimo de 3.5s para apreciar el efecto */
-  var minDelay = 3500;
+  var minDelay = 3000;
   var loadFired = false;
   var loadTime  = null;
 
