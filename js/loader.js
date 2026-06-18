@@ -302,7 +302,7 @@
 
   /* disparo real: window load (DOM + recursos)
      + retardo mínimo de 3.5s para apreciar el efecto */
-  var minDelay = 3000;
+  var minDelay = 2500;
   var loadFired = false;
   var loadTime  = null;
 
@@ -322,7 +322,7 @@
     });
   }
 
-  /* fallback de seguridad: máximo 8 segundos */
+  /* fallback de seguridad: máximo 5 segundos */
   setTimeout(function(){
     if (overlay.isConnected){ dismiss(); }
   }, 8000);
