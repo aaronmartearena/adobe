@@ -5,10 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ── Año dinámico en footer ── */
-  const yearEl = document.getElementById('year');
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
-
   /* ── Navbar: fondo al hacer scroll ── */
   const nav = document.getElementById('nav');
   if (nav) {
