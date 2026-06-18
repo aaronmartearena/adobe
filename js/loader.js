@@ -67,11 +67,11 @@
     /* coordenadas en esquinas */
     '.acad-coord{',
       'position:absolute;font-family:"Inter",monospace;',
-      'font-size:10px;color:rgba(255,102,0,.45);',
+      'font-size:10px;color:rgba(255,102,0,.85);',
       'letter-spacing:.1em;pointer-events:none;z-index:3;',
       'animation:acad-blink 2.8s ease-in-out infinite;',
     '}',
-    '@keyframes acad-blink{0%,100%{opacity:.45}50%{opacity:.9}}',
+    '@keyframes acad-blink{0%,100%{opacity:.85}50%{opacity:.1}}',
     '.acad-coord.tl{top:14px;left:18px;}',
     '.acad-coord.tr{top:14px;right:18px;text-align:right;}',
     '.acad-coord.bl{bottom:14px;left:18px;}',
@@ -81,7 +81,7 @@
     '#acad-label{',
       'position:absolute;bottom:40px;left:50%;transform:translateX(-50%);',
       'font-family:"Inter",monospace;font-size:10px;',
-      'color:rgba(255,255,255,.25);letter-spacing:.22em;',
+      'color:rgba(255,102,0,.85);letter-spacing:.22em;',
       'text-transform:uppercase;white-space:nowrap;z-index:3;',
     '}',
   ].join('');
